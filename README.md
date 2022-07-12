@@ -6,4 +6,4 @@ Example book is [Jane Austin's Pride and Prejudice](https://www.gutenberg.org/fi
 
 * `book.rake` imports a book in the data folder. Hard coded for now and the book data is not parsed out.
 
-![image](https://user-images.githubusercontent.com/64463/178391215-59f668c3-b95e-4cb0-ad3f-c8ff08da5982.png)
+![gutenberg_serach](https://user-images.githubusercontent.com/64463/178392758-f935918e-8eb8-4d87-8052-b17c149289d9.jpg)
