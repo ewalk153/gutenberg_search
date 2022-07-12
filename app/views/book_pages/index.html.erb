@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Book pages</h1>
+
+<%= form_with url: book_pages_path, method: :get do |form| %>
+  <%= form.label :query, "Search for:" %>
+  <%= form.text_field :query, value: params[:query] %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<%= will_paginate @book_pages %>
+
+<div id="book_pages">
+  <% @book_pages.each do |book_page| %>
+    <%= render book_page %>
+    <p>
+      <%= link_to "Show this book page", book_page %>
+    </p>
+  <% end %>
+</div>
+
+<%= will_paginate @book_pages %>
+
+<%= link_to "New book page", new_book_page_path %>
