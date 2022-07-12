@@ -2,7 +2,7 @@
   <p>
     <strong>Body:</strong>
     <pre>
-    <%= book_page.body %>
+    <%= highlight(book_page.body, params[:query]) %>
     </pre>
     <br>
     <strong>Page:</strong> <%= book_page.page %>
